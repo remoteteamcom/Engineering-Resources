@@ -27,3 +27,15 @@ sudo docker exec -it <mycontainer> bash
 ```
 sudo docker network rm $(sudo docker network ls)
 ```
+
+## MySQL
+### Switching from MySQL’s utf8 to utf8mb4
+
+```
+# Database
+ALTER DATABASE database_name CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
+# Table
+ALTER TABLE table_name CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+# Column
+ALTER TABLE table_name CHANGE column_name column_name VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
