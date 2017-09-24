@@ -39,3 +39,7 @@ ALTER TABLE table_name CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_
 # Column
 ALTER TABLE table_name CHANGE column_name column_name VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
+
+## Varnish Cache - Fastly 
+
+* `surrogate-key` has limits https://docs.fastly.com/guides/purging/getting-started-with-surrogate-keys
