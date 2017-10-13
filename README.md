@@ -40,6 +40,19 @@ ALTER TABLE table_name CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_
 ALTER TABLE table_name CHANGE column_name column_name VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
+### Create User
+```
+CREATE USER 'newuser'@'%' IDENTIFIED BY 'password';
+```
+
+```
+GRANT ALL PRIVILEGES ON mydatabase. * TO 'newuser'@'%';
+```
+
+```
+FLUSH PRIVILEGES;
+```
+
 ## Varnish Cache - Fastly 
 
 * `surrogate-key` has limits https://docs.fastly.com/guides/purging/getting-started-with-surrogate-keys
