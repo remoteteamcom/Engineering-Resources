@@ -56,3 +56,14 @@ FLUSH PRIVILEGES;
 ## Varnish Cache - Fastly 
 
 * `surrogate-key` has limits https://docs.fastly.com/guides/purging/getting-started-with-surrogate-keys
+
+## Crontab Syntax
+```
+  # +---------------- minute (0 - 59)
+  # |  +------------- hour (0 - 23)
+  # |  |  +---------- day of month (1 - 31)
+  # |  |  |  +------- month (1 - 12)
+  # |  |  |  |  +---- day of week (0 - 6) (Sunday=0 or 7)
+  # |  |  |  |  |
+  # *  *  *  *  * 
+```
