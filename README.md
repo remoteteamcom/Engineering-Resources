@@ -53,11 +53,16 @@ GRANT ALL PRIVILEGES ON mydatabase. * TO 'newuser'@'%';
 FLUSH PRIVILEGES;
 ```
 
-## Varnish Cache - Fastly 
+## Caching
+
+### Varnish Cache - Fastly 
 
 * `surrogate-key` has limits https://docs.fastly.com/guides/purging/getting-started-with-surrogate-keys
 
-## Crontab Syntax
+
+## Cron
+
+### Syntax
 ```
   # +---------------- minute (0 - 59)
   # |  +------------- hour (0 - 23)
