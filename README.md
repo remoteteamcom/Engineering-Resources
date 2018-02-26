@@ -61,6 +61,12 @@ docker exec CONTAINER /usr/bin/mysqldump -u root --password=root DATABASE > back
 #### Restore
 cat backup.sql | docker exec -i CONTAINER /usr/bin/mysql -u root --password=root DATABASE
 
+
+## ELK
+
+* https://community.bitnami.com/t/elk-for-aws-elastic-could-not-be-started-after-plugin-install/48848/2
+
+
 ## Caching
 
 ### Varnish Cache - Fastly 
