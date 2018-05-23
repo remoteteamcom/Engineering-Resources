@@ -53,6 +53,16 @@ GRANT ALL PRIVILEGES ON mydatabase. * TO 'newuser'@'%';
 FLUSH PRIVILEGES;
 ```
 
+### Backup and restore
+
+```
+mysqldump -h hostname -u username -p database_name > backup.sql
+```
+
+```
+mysql -h hostname -u username -p database_name < backup.sql
+```
+
 ### Docker
 
 #### Backup
