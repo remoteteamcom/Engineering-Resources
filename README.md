@@ -63,7 +63,7 @@ mysqldump -h hostname -u username -p database_name > backup.sql
 mysql -h hostname -u username -p database_name < backup.sql
 ```
 
-### Docker
+### Backup and restore in docker containes
 
 #### Backup
 docker exec CONTAINER /usr/bin/mysqldump -u root --password=root DATABASE > backup.sql
