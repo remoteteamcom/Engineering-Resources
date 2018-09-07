@@ -1,6 +1,6 @@
 # Ruby on Rails with Webpack and Vue
 
-* config/webbpack/loaders/vue.js
+## config/webbpack/loaders/vue.js
 
 ```js
 
@@ -20,7 +20,7 @@ module.exports = {
 
 ```
 
-* config/webpack/environment.js
+## config/webpack/environment.js
 
 ```js
 const { environment } = require('@rails/webpacker')
@@ -31,7 +31,7 @@ module.exports = environment
 
 ```
 
-* package.json
+## package.json
 
 ```
 {
@@ -52,7 +52,7 @@ module.exports = environment
 
 ```
 
-* app/javascript/packs/application.js
+## app/javascript/packs/application.js
 
 ```js
 import Vue from 'vue/dist/vue.esm'
