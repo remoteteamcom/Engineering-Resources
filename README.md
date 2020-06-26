@@ -1,2 +1,3 @@
-# My Cheatsheets
-There are lots of cheatsheets in github. This is just what i needed as a backend developer.
+# Engineering Resources 
+
+We keep scripts, example code blocks, links to blog posts, boilerplates here.
