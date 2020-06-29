@@ -17,7 +17,7 @@ CREATE USER 'newuser'@'%' IDENTIFIED BY 'password';
 ```
 
 ```
-GRANT ALL PRIVILEGES ON mydatabase. * TO 'newuser'@'%';
+GRANT ALL PRIVILEGES ON mydatabase. * TO 'newuser'@'%'; or GRANT SELECT, INSERT, DELETE ON mydatabase. * TO 'newuser'@'%';
 ```
 
 ```
@@ -46,4 +46,12 @@ docker exec CONTAINER /usr/bin/mysqldump -u root --password=root DATABASE > back
 
 ```
 cat backup.sql | docker exec -i CONTAINER /usr/bin/mysql -u root --password=root DATABASE
+```
+
+### Export and Import
+
+#### Import
+
+```
+LOAD DATA LOCAL INFILE '/path/to/data.csv' INTO TABLE table_name FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 ROWS (id, first_name, last_name, email, transactions, @account_creation)SET account_creation  = STR_TO_DATE(@account_creation, '%m/%d/%y');
 ```
