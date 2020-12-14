@@ -23,3 +23,24 @@ sudo docker exec -it <mycontainer> bash
 ```
 sudo docker network rm $(sudo docker network ls)
 ```
+
+
+## Remove unused data
+
+```
+docker system prune -a
+```
+
+
+## Remove build cache
+
+```
+docker builder prune -a
+```
+
+
+## Remove unused images
+
+```
+docker image prune -a
+```
