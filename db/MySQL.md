@@ -1,5 +1,11 @@
 # MySQL
 
+## Installation
+### Client
+```
+sudo apt-get install mysql-client
+```
+
 ## Switching from MySQL’s utf8 to utf8mb4
 
 ```
